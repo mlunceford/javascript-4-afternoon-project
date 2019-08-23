@@ -57,17 +57,18 @@ class Employee{
   Call your new class Manager
 */
 
-//Code Here
+//Code Here need help
 class Manager extends Employee {
   constructor(first_name, last_name, email, age, reports=[]){
-  this.reports = reports
-  super(first_name, last_name, email, age)
+    super(first_name, last_name, email, age)
+    this.reports = reports
+
   }
   hire(employee){
-    new employee()
-    this.reports.push(Employee)  }
+    this.reports.push(employee)  }
   fire(index){
-    this.reports.splice(Employee[index],1)
+    this.reports.splice(index,1)
+
   }  
 }
 
