@@ -20,7 +20,10 @@
   
 
 //Code Here
-
+let user = {
+  username: '',
+  email: 
+}
 
 
 ////////// PROBLEM 2 //////////
