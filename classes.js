@@ -30,14 +30,15 @@
 */
 
 //Code
-class Employee{
-  constructor(first_name, last_name, email, age){
+class Employee {
+  constructor(first_name, last_name, email, age) {
     this.first_name = first_name
     this.last_name = last_name
     this.email = email
-    this.age = age   
+    this.age = age
+
   }
-  makeWidget(){
+  makeWidget() {
     return `${this.first_name} ${this.last_name} Widget`
   }
 }
@@ -59,17 +60,18 @@ class Employee{
 
 //Code Here need help
 class Manager extends Employee {
-  constructor(first_name, last_name, email, age, reports=[]){
+  constructor(first_name, last_name, email, age, reports = []) {
     super(first_name, last_name, email, age)
     this.reports = reports
 
   }
-  hire(employee){
-    this.reports.push(employee)  }
-  fire(index){
-    this.reports.splice(index,1)
+  hire(employee) {
+    this.reports.push(employee)
+  }
+  fire(index) {
+    this.reports.splice(index, 1)
 
-  }  
+  }
 }
 
 ////////// PROBLEM 3 //////////
@@ -94,9 +96,36 @@ class Manager extends Employee {
 */
 
 //Code Here
+class ProgressiveManager extends Manager() {
+  constructor(first_name, last_name, email, age, reports = [], title = 'Not a manager', bonus = 0) {
+    super(first_name, last_name, email, age, reports = [])
+    this.title = title
+    this.bunus = bonus
+  }
+  hire(employee){
+    this.reports.push(employee)
+    // do all the if statements 
+    // if (this.reports.length <= 3){
+      return this.ProgressiveManager.title = "Not a manager"
 
 
+      // evaluateManager();
+    }
+    
 
+    
+  }
+
+  fire(bonus) {
+    this.bonus = eval(bonus + 100);
+  }
+}
+// evaluateManager();
+
+
+// Add in third function called evaluateManager() {
+  // Put in the lgic to count and then sssign the string here 
+}
 ////////// PROBLEM 4 - Black Diamond //////////
 
 /*
